@@ -11,6 +11,14 @@ backend/.env
 frontend/.env
 reset-mysql*.ps1
 testPasswords.js
+*.pem
+*.key
+*.cert
+*.pfx
+*.dump
+*.sql.bak
+*.db.bak
+*.bak
 
 # Dependencies
 node_modules/

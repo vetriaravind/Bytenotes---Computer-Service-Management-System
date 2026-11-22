@@ -14,7 +14,7 @@ dotenv.config({ path: path.join(__dirname, '../.env') });
 
 const DB_HOST = process.env.DB_HOST || 'localhost';
 const DB_USER = process.env.DB_USER || 'root';
-const DB_PASSWORD = process.env.DB_PASSWORD !== undefined ? process.env.DB_PASSWORD : '2006';
+const DB_PASSWORD = process.env.DB_PASSWORD || '';
 const DB_NAME = process.env.DB_NAME || 'bytenotes_db';
 const DB_PORT = parseInt(process.env.DB_PORT, 10) || 3306;
 
