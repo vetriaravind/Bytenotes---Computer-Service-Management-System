@@ -1,0 +1,55 @@
+# ==========================================
+# ByteNotes - Git Ignore Configuration
+# ==========================================
+
+# Environment variables & secrets (NEVER commit database credentials or keys)
+.env
+.env.*
+!.env.example
+*.env
+backend/.env
+frontend/.env
+reset-mysql*.ps1
+testPasswords.js
+
+# Dependencies
+node_modules/
+*/node_modules/
+package-lock.json.bak
+
+# Production Build Artifacts
+dist/
+dist-ssr/
+frontend/dist/
+build/
+*.local
+
+# Uploaded Files & Generated Documents (Preserve directory structure via .gitkeep)
+backend/uploads/devices/*
+!backend/uploads/devices/.gitkeep
+backend/uploads/invoices/*
+!backend/uploads/invoices/.gitkeep
+uploads/
+
+# Logs & Debugging
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor & OS Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testing & Coverage
+coverage/
+.nyc_output/

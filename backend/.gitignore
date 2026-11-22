@@ -1,0 +1,24 @@
+# Node dependencies
+node_modules/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.env
+
+# Uploads & Generated files
+uploads/devices/*
+!uploads/devices/.gitkeep
+uploads/invoices/*
+!uploads/invoices/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Temp & Secrets
+testPasswords.js
+reset-mysql*.ps1
+.DS_Store
+Thumbs.db
